@@ -13,12 +13,17 @@
 
   <div class="field">
     <%= form.label :game_id %>
-    <%= form.text_field :game_id %>
+    <%= options_for_select(games_for_select) %>
   </div>
     <div class="field">
     <%= form.label :cover_photo %>
     <%= form.file_field :cover_photo %>
   </div>
+
+  </div>
+
+ 
+
 
   <div class="actions">
     <%= form.submit %>

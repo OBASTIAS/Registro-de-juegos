@@ -21,6 +21,7 @@ class GamesController < ApplicationController
 
   # POST /games or /games.json
   def create
+    byebug
     @game = Game.new(game_params)
 
     respond_to do |format|
@@ -65,6 +66,6 @@ class GamesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def game_params
-      params.require(:game).permit(:name, :description, :cover_photo)
+      params.require(:game).permit(:name, :description, :cover_photo, game_attributes: [:id, :game_id,:description, :_destroy])
     end
 end

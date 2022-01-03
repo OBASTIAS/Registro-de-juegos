@@ -71,4 +71,6 @@ gem 'rails-erd', group: :development
 gem "figaro"
 gem 'aws-sdk-s3', require: false
 gem 'activestorage-validator'
-
+gem 'jquery-rails'
+gem 'cocoon'
+gem 'bootstrap',  '~>4.6.0'
